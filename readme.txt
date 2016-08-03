@@ -1,0 +1,1 @@
+food blog created in January 2015 for php and javascript/jquery practising purposes. 
