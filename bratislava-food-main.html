@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Slovak and Bratislava food</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/bratislava-food.css" />
+    </head>
+    <body>
+        <div class="container-fluid">
+        <div class="wrapper">
+            <div id="content"> <!--for page-loader.js - probably will go away.-->
+                <header>
+                    <h1 id="headerText">Bratislava cuisine</h1>
+                    <div id="searchBox">
+                        <form action="">
+                            <!-- <div class="searchButton"><input id="searchButton" type="submit" value="search"/></div> -->
+                            <input id="searchField" type="search" name="search" size="20" placeholder="Search..." />
+                        </form>
+                    </div> <!-- search field -->
+
+                    <nav>
+                        <ul id="nav-list">
+                            <li><a href="bratislava-food-main.html" class="current">Home</a></li>
+                            <li><a href="recipes.html">Recipes<img src="images/nav-icon-transp.png" alt="Recipes" /></a>
+                                <ul class="nav-sublist">
+                                    <li><a href="potato-fritters.php">Soups</a></li>
+                                    <li><a href="">Meatlovers</a></li>
+                                    <li><a href="">Veggies</a></li>
+                                    <li><a href="">Bread</a></li>
+                                    <li><a href="">Desserts</a></li>
+                                    <li><a href="">Drinks</a></li>
+                                    <li><a href="">Basics5</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="ingredients-list.html">Ingredients</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li id="signup-button">Sign up</li>
+                            <li id="login-button">Log in</li>
+                            <li id="logout-button">Log out</li>
+                            <li><a href="">Follow<img src="images/nav-icon-transp.png" alt="Recipes" /></a>
+                                <ul class="nav-sublist">
+                                    <li><a href="">FB</a></li>
+                                    <li><a href="">Twitter</a></li>
+                                    <li><a href="">Insta</a></li>
+                                    <li><a href="">Google+</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="mailto:sylvuso@yahoo.co.uk">Contact</a></li>
+                        </ul>
+                    </nav>
+                </header>
+
+                <div class="signup-login-window" id="signup-window">  <!-- popup sign-up div -->
+                    <div class="close-button">x</div>
+                    <form action="register.php" id="register" method="post">    
+                        <p><input type="text" name="name" placeholder="Username:" size="15" maxlength="30" /></p>
+                        <p><input type="password" name="password1" placeholder="Password*:" required="required" size="15" maxlength="30" /></p>
+                        <p><input type="password" name="password2" placeholder="Repeat password*:" required="required" size="15" maxlength="30" /></p>
+                        <p><input type="email" name="email1" placeholder="Email*: " required="required" size="15" maxlength="30" /></p>
+                        <p><input type="email" name="email2" placeholder="Repeat email*: " required="required" size="15" maxlength="30" /></p>
+                        <p><input id="submit" type="submit"></p>
+                        <p>Already signed up? <a href="">Log in here.</a></p>
+                    </form>
+                </div> <!--signup div -->  
+
+                <div class="signup-login-window" id="login-window">   <!-- popup login div -->
+                    <div class="close-button">x</div>
+                    <form action="login.php" id="login" method="post">    
+                        <p><input type="text" name="name" placeholder="Username:" size="15" maxlength="30" /></p>
+                        <p><input type="password" name="password" placeholder="Password*:" required="required" size="15" maxlength="30" /></p>
+                        <p><input type="submit" id="submit1" value="Login"></p>
+                        <p>Not yet signed up? <a href="">Sign up in here.</a></p>
+                    </form>
+                </div> <!--login div -->  
+
+                <div class="signup-login-window" id="logout-window">   <!-- popup login div -->
+                    <div class="close-button">x</div>
+                        <form action="goodbye.php" id="logout" method="post"> 
+                            <p>Are you sure you want to log out?</p>
+                            <input type="submit" id="logoutB" value="Logout">
+                        </form>
+                </div> <!--logout div -->  
+
+                <div id="recipe_links"> 
+
+                    <figure>
+                        <a href="potato-fritters.php"> <img src="images/pot-fritters.jpg" class="img-responsive" alt="Potato fritters" /></a>
+                        <figcaption>Potato fritters</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/lentil-soup.jpg" alt="Lentil soup" />
+                        <figcaption>Sour lentil soup</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/caraway-bread.jpg" alt="Caraway bread" />
+                        <figcaption>Caraway bread</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/rum-balls.jpg" alt="Rum balls" />
+                        <figcaption>Coconut rum balls</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/breaded-mushrooms.jpg" alt="Breaded mushrooms" />
+                        <figcaption>Breaded mushrooms</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/bean-veg-soup.jpg" alt="Bean and vegetable soup" />
+                        <figcaption>Beans and vegetable soup</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/poppych-strudel.jpg" alt="Poppy and cherry strudel" />
+                        <figcaption>Poppy & cherry strudel</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/goulash.jpg" alt="Goulash" />
+                        <figcaption>Goulash</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/bosnian-soup.jpg" alt="Cream garlic soup in bosnian loaf" />
+                        <figcaption>Creamy garlic soup in bosnian loaf</figcaption>
+                    </figure>
+                </div>    <!--recipe links -->
+
+
+                <div id="navigation-top"><a href="#headerText">Top of Page</a></div>
+            </div> <!--content-->
+
+            <footer>
+                <div id="todaysDate"></div>
+                <div id="copyright">&copy Bratislava food 2015</div>			
+            </footer>
+
+        </div><!-- .wrapper -->
+
+        <script src="js/footer-info.js"></script>
+        <script src="js/jquery-1.11.3.js"></script>
+        <script src="js/toggle-list.js"></script>
+        <script src="js/signup.js"></script>
+        <script src="js/register.js"></script> 
+        <script src="js/login.js"></script>
+        <script src="js/goodbye.js"></script>
+        <script src="js/page-loader.js"></script>
+        </div>
+    </body>
+    </html>	

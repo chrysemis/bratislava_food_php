@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Slovak and Bratislava food</title>
+		 <link rel="stylesheet" href="css/bratislava-food.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+					<div id="searchBox">
+					<form action="">
+						<div class="searchButton"><input id="searchButton" type="submit" value="search" /></div>
+						<div class="searchField"><input id="searchField" type="search" name="search" size="15" placeholder="Search..." /></div>
+					</form>
+				</div>
+				<h1 id="headerText">Bratislava cuisine</h1>
+				
+				<nav>
+					<ul>
+						<li><a href="bratislava-food-main.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="recipes.html">Recipes</a></li>
+						<li><a href="ingredients-list.html">Ingredients</a></li>
+						<li><a href="sign-up.html">Sign up</a></li>
+						<li><a href="log-in.html" class="current">Log in</a></li>
+						<li><a href="">Follow</a></li>
+						<li><a href="mailto:sylvuso@yahoo.co.uk">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+    <div id="page">
+      <h1>log in</h1>
+       <form method="post" action="">
+
+        <label for="username">Username: </label>
+        <input type="text" id="username" /><div id="feedback"></div>
+
+        <label for="password">Create a password: </label>
+        <input type="password" id="password" /><div id="feedback"></div>
+
+        <input type="submit" value="sign up" />
+
+      </form>
+    </div>
+				<footer>
+				<div id="todaysDate"></div>
+				<div id="copyright">&copy Bratislava food 2015</div>
+			</footer>
+		</div><!-- .wrapper -->
+	
+	<script src="js/footer-info.js"></script>
+    <script src="js/check-login-email.js"></script>
+  </body>
+</html>
